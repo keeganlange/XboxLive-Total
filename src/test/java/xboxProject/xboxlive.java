@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import org.testng.annotations.Test;
 
 
 public class xboxlive{
@@ -105,7 +104,7 @@ public class xboxlive{
 				System.out.println("Title is NOT displayed");
 			}
 			
-			assert first4Games.contains(gameTitle.getText());
+			Assert.assertNotNull(gameTitle.getText());
 		}
 	}
 	
